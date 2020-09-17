@@ -2,6 +2,7 @@ package net.ivanvega.miprimerproyectoandroid;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,9 @@ public class ActivityDos extends AppCompatActivity {
         setContentView(R.layout.layout_segunda_activity);
 
         Log.i("acti", "paso por oncreate");
+
+        Toast.makeText(this,
+                "Este es un toast", Toast.LENGTH_LONG).show();
     }
 
     @Override
